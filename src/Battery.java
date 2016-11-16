@@ -11,6 +11,11 @@ public class Battery extends Subject {
 		notifyObserver();
 	}
 	
+	public void charge(int amount) {
+		level += amount;
+		notifyObserver();
+	}
+	
 	public int getLevel() {
 		return level;
 	}
